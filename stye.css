@@ -1,0 +1,12 @@
+.jumbotron {
+    background-image: url("http://www.snam.com/activites-ferroviaire/images/header-train.jpg");
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: fixed;
+      background-position-y: center;
+      background-position-x: center;
+      
+    
+}
