@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css" >
         <link rel="stylesheet" href="stye.css">
-
+        
 
 
     <title>Document</title>
@@ -17,8 +17,7 @@
 
     <div class="jumbotron">
         <h1 class="display-4 d-flex justify-content-end text-dark">Hello, world!</h1>
-        <p class="lead d-flex justify-content-end text-dark">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.</p>
+        <p class="lead d-flex justify-content-end text-dark">This is a simple hero unit.</p>
      
     </div>
     <div class="container mt-5">
@@ -33,13 +32,10 @@
                         <th id="" scope="col">Minutes Away</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="table-body">
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>ks</td>
+                        
+                       
                     </tr>
              
                 </tbody>
@@ -70,7 +66,7 @@
                     <input type="text" class="form-control" id="frequency" placeholder="Frequency">
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
             </form>
         </div>
     </div>
@@ -93,13 +89,19 @@
 
 
 
-
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    
+    
+    
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+        <script src=" https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+     
+            <script src="logic.js"></script>
 </body>
 
 </html>
