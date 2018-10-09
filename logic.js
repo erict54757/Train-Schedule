@@ -35,10 +35,10 @@ $("#submitButton").on("click", function () {
 
 database.ref().on("child_added", function(snapshot) {
 var fd = snapshot.val();
-var newRow = $("<tr>")
-var nameTd= $("<td>").text(fd.name);
-var destinationTd = $("<td>").text(fd.destination);
-var frequencyTd = $("<td>").text(fd.frequency);
+var newRow = $("<tr class = 'text-center'>")
+var nameTd= $("<td class= 'd-inine-flex justify-content-center text-center'>").text(fd.name);
+var destinationTd = $("<td class= 'd-inine-flex justify-content-center text-center'>").text(fd.destination);
+var frequencyTd = $("<td class= 'd-inine-flex justify-content-center text-center'>").text(fd.frequency);
 var timeFormat = "HH:mm";
 var firstTime = moment(fd.time).format(timeFormat);
 // console.log (fd.time);
@@ -76,8 +76,8 @@ var nextTrain = moment().add(tMinutesTillTrain, "minutes");
 console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
 
 
-var nextArrival = $("<td>").text(moment(nextTrain).format("hh:mm"));
-var minutesAway = $("<td>").text(tMinutesTillTrain)
+var nextArrival = $("<td class= 'd-inine-flex justify-content-center text-center'>").text(moment(nextTrain).format("hh:mm"));
+var minutesAway = $("<td class= 'd-inine-flex justify-content-center text-center'>").text(tMinutesTillTrain)
 
 newRow.append(nameTd, destinationTd, frequencyTd, nextArrival, minutesAway);
 $("#table-body").append(newRow);
